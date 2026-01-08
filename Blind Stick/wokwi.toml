@@ -1,0 +1,31 @@
+[wokwi]
+version = 1
+firmware = '.pio//build//nodemcu-32s//firmware.bin'
+elf = '.pio//build//nodemcu-32s//firmware.elf'
+
+name = "Smart Blind Stick - ESP32 + HC-SR04"
+
+[[parts]]
+type = "esp32-devkit-v1"
+id = "esp"
+translate = [0, 0]
+
+[[parts]]
+type = "hc-sr04"
+id = "ultrasonic"
+translate = [300, 0]
+
+[[parts]]
+type = "wokwi-buzzer"
+id = "buzzer"
+translate = [100, 150]
+
+[[parts]]
+type = "wokwi-pushbutton"
+id = "panic_button"
+translate = [250, 150]
+
+[[parts]]
+type = "board-ssd1306"
+id = "oled"
+translate = [400, 0]
